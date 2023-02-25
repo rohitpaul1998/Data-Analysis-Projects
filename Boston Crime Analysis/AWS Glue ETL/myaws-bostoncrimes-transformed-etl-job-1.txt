@@ -1,0 +1,268 @@
+{
+  "jobConfig": {
+    "name": "myaws-bostoncrimes-transformed-etl-job-1",
+    "description": "",
+    "role": "arn:aws:iam::732764948125:role/service-role/AWSGlueServiceRole-myaws-bostoncrimes-transformed-iamrole-1",
+    "command": "glueetl",
+    "version": "3.0",
+    "workerType": "G.1X",
+    "numberOfWorkers": 10,
+    "maxCapacity": 10,
+    "maxRetries": 5,
+    "timeout": 2880,
+    "maxConcurrentRuns": 5,
+    "security": "none",
+    "scriptName": "myaws-bostoncrimes-transformed-etl-job-1.py",
+    "scriptLocation": "s3://aws-glue-assets-732764948125-us-east-1/scripts/",
+    "language": "python-3",
+    "jobParameters": [],
+    "tags": [],
+    "jobMode": "DEVELOPER_MODE",
+    "createdOn": "2023-02-22T03:25:54.505Z",
+    "developerMode": true,
+    "connectionsList": [],
+    "temporaryDirectory": "s3://aws-glue-assets-732764948125-us-east-1/temporary/",
+    "logging": true,
+    "glueHiveMetastore": true,
+    "etlAutoTuning": true,
+    "metrics": true,
+    "spark": true,
+    "bookmark": "job-bookmark-disable",
+    "sparkPath": "s3://aws-glue-assets-732764948125-us-east-1/sparkHistoryLogs/",
+    "flexExecution": false,
+    "minFlexWorkers": null
+  },
+  "dag": {
+    "node-1677035666462": {
+      "nodeId": "node-1677035666462",
+      "dataPreview": false,
+      "previewAmount": 0,
+      "inputs": [],
+      "name": "AWS Glue Data Catalog",
+      "generatedNodeName": "AWSGlueDataCatalog_node1677035666462",
+      "classification": "DataSource",
+      "type": "Catalog",
+      "isCatalog": true,
+      "database": "myawsbostoncrimesdb",
+      "table": "myaws_bostoncrimes_datalake",
+      "calculatedType": "",
+      "runtimeParameters": [],
+      "codeGenVersion": 2
+    },
+    "node-1677035684533": {
+      "nodeId": "node-1677035684533",
+      "dataPreview": false,
+      "previewAmount": 0,
+      "inputs": [
+        "node-1677035666462"
+      ],
+      "name": "Change Schema (Apply Mapping)",
+      "generatedNodeName": "ChangeSchemaApplyMapping_node1677035684533",
+      "classification": "Transform",
+      "type": "ApplyMapping",
+      "mapping": [
+        {
+          "toKey": "incident_number",
+          "fromPath": [
+            "incident_number"
+          ],
+          "toType": "string",
+          "fromType": "string",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "offense_code",
+          "fromPath": [
+            "offense_code"
+          ],
+          "toType": "long",
+          "fromType": "long",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "offense_code_group",
+          "fromPath": [
+            "offense_code_group"
+          ],
+          "toType": "string",
+          "fromType": "string",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "offense_description",
+          "fromPath": [
+            "offense_description"
+          ],
+          "toType": "string",
+          "fromType": "string",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "district",
+          "fromPath": [
+            "district"
+          ],
+          "toType": "string",
+          "fromType": "string",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "reporting_area",
+          "fromPath": [
+            "reporting_area"
+          ],
+          "toType": "int",
+          "fromType": "long",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "shooting",
+          "fromPath": [
+            "shooting"
+          ],
+          "toType": "string",
+          "fromType": "string",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "occurred_on_date",
+          "fromPath": [
+            "occurred_on_date"
+          ],
+          "toType": "timestamp",
+          "fromType": "string",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "year",
+          "fromPath": [
+            "year"
+          ],
+          "toType": "int",
+          "fromType": "long",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "month",
+          "fromPath": [
+            "month"
+          ],
+          "toType": "int",
+          "fromType": "long",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "day_of_week",
+          "fromPath": [
+            "day_of_week"
+          ],
+          "toType": "string",
+          "fromType": "string",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "hour",
+          "fromPath": [
+            "hour"
+          ],
+          "toType": "int",
+          "fromType": "long",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "ucr_part",
+          "fromPath": [
+            "ucr_part"
+          ],
+          "toType": "string",
+          "fromType": "string",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "street",
+          "fromPath": [
+            "street"
+          ],
+          "toType": "string",
+          "fromType": "string",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "lat",
+          "fromPath": [
+            "lat"
+          ],
+          "toType": "double",
+          "fromType": "double",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "long",
+          "fromPath": [
+            "long"
+          ],
+          "toType": "double",
+          "fromType": "double",
+          "dropped": false,
+          "children": null
+        },
+        {
+          "toKey": "location",
+          "fromPath": [
+            "location"
+          ],
+          "toType": "string",
+          "fromType": "string",
+          "dropped": true,
+          "children": null
+        }
+      ],
+      "parentsValid": true,
+      "calculatedType": "",
+      "codeGenVersion": 2
+    },
+    "node-1677035823617": {
+      "nodeId": "node-1677035823617",
+      "dataPreview": false,
+      "previewAmount": 0,
+      "inputs": [
+        "node-1677035684533"
+      ],
+      "name": "Amazon S3",
+      "generatedNodeName": "AmazonS3_node1677035823617",
+      "classification": "DataSink",
+      "type": "S3",
+      "streamingBatchInterval": 100,
+      "format": "csv",
+      "compression": "none",
+      "path": "s3://myaws-bostoncrimes-transformed",
+      "partitionKeys": [],
+      "schemaChangePolicy": {
+        "enableUpdateCatalog": false,
+        "updateBehavior": null,
+        "database": null,
+        "table": null
+      },
+      "updateCatalogOptions": "none",
+      "calculatedType": "",
+      "codeGenVersion": 2
+    }
+  },
+  "hasBeenSaved": false,
+  "script": "import sys\nfrom awsglue.transforms import *\nfrom awsglue.utils import getResolvedOptions\nfrom pyspark.context import SparkContext\nfrom awsglue.context import GlueContext\nfrom awsglue.job import Job\nfrom awsglue.dynamicframe import DynamicFrame\nfrom pyspark.sql.functions import when, col\n\nargs = getResolvedOptions(sys.argv, [\"JOB_NAME\"])\nsc = SparkContext()\nglueContext = GlueContext(sc)\nspark = glueContext.spark_session\njob = Job(glueContext)\njob.init(args[\"JOB_NAME\"], args)\n\n# Script generated for node AWS Glue Data Catalog\nAWSGlueDataCatalog_node1677035666462 = glueContext.create_dynamic_frame.from_catalog(\n    database=\"myawsbostoncrimesdb\",\n    table_name=\"myaws_bostoncrimes_datalake\",\n    transformation_ctx=\"AWSGlueDataCatalog_node1677035666462\",\n)\n\ncrimeDF = AWSGlueDataCatalog_node1677035666462.toDF()\n\ncrimeDF1= crimeDF.fillna({\n    \"district\":\"Unknown\"\n})\n\ncrimeDF1= crimeDF.fillna({\n    \"shooting\":\"Unknown\",\n    \"incident_number\":\"Unknown\",\n    \"offense_code_group\":\"Unknown\",\n    \"offense_description\":\"Unknown\",\n    \"day_of_week\":\"Unknown\",\n    \"ucr_part\":\"Unknown\",\n    \"street\":\"Unknown\"\n})\n\ncrimeDF1 = crimeDF1.withColumn(\"offense_code\", when(col(\"offense_code\").isNull(), -1).otherwise(col(\"offense_code\")))\ncrimeDF1 = crimeDF1.withColumn(\"occurred_on_date\", when(col(\"occurred_on_date\").isNull(), \"9999-12-31 23:59:59\").otherwise(col(\"occurred_on_date\")))\ncrimeDF1 = crimeDF1.withColumn(\"year\", when(col(\"year\").isNull(), 9999).otherwise(col(\"year\")))\ncrimeDF1 = crimeDF1.withColumn(\"month\", when(col(\"month\").isNull(), -1).otherwise(col(\"month\")))\ncrimeDF1 = crimeDF1.withColumn(\"hour\", when(col(\"hour\").isNull(), -1).otherwise(col(\"hour\")))\ncrimeDF1 = crimeDF1.withColumn(\"Lat\", when(col(\"Lat\").isNull(), -999).otherwise(col(\"Lat\")))\ncrimeDF1 = crimeDF1.withColumn(\"Long\", when(col(\"Long\").isNull(), -999).otherwise(col(\"Long\")))\n\ndynamic_dframe = DynamicFrame.fromDF(crimeDF1, glueContext, \"dynamic_df\")\n\n# Script generated for node Change Schema (Apply Mapping)\nChangeSchemaApplyMapping_node1677035684533 = ApplyMapping.apply(\n    frame=dynamic_dframe,\n    mappings=[\n        (\"incident_number\", \"string\", \"incident_number\", \"string\"),\n        (\"offense_code\", \"long\", \"offense_code\", \"long\"),\n        (\"offense_code_group\", \"string\", \"offense_code_group\", \"string\"),\n        (\"offense_description\", \"string\", \"offense_description\", \"string\"),\n        (\"district\", \"string\", \"district\", \"string\"),\n        (\"reporting_area\", \"long\", \"reporting_area\", \"int\"),\n        (\"shooting\", \"string\", \"shooting\", \"string\"),\n        (\"occurred_on_date\", \"string\", \"occurred_on_date\", \"timestamp\"),\n        (\"year\", \"long\", \"year\", \"int\"),\n        (\"month\", \"long\", \"month\", \"int\"),\n        (\"day_of_week\", \"string\", \"day_of_week\", \"string\"),\n        (\"hour\", \"long\", \"hour\", \"int\"),\n        (\"ucr_part\", \"string\", \"ucr_part\", \"string\"),\n        (\"street\", \"string\", \"street\", \"string\"),\n        (\"lat\", \"double\", \"lat\", \"double\"),\n        (\"long\", \"double\", \"long\", \"double\"),\n    ],\n    transformation_ctx=\"ChangeSchemaApplyMapping_node1677035684533\",\n)\n\n# Script generated for node Amazon S3\nAmazonS3_node1677035823617 = glueContext.write_dynamic_frame.from_options(\n    frame=ChangeSchemaApplyMapping_node1677035684533,\n    connection_type=\"s3\",\n    format=\"csv\",\n    connection_options={\n        \"path\": \"s3://myaws-bostoncrimes-transformed\",\n        \"partitionKeys\": [],\n    },\n    transformation_ctx=\"AmazonS3_node1677035823617\",\n)\n\njob.commit()\n"
+}

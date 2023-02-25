@@ -38,6 +38,7 @@ ________________________________________________________________________________
 2. Gathered structured data from Health websites and Twitter using web-scraping techniques, analyzed and transformed it with Python's Pandas and NumPy libraries achieving 98% data accuracy and data completeness
 3. Loaded normalized database tables with clean data to eliminate data redundancy, created SQL views resulting in 100% database organization and visualized data using Seaborn library in Python that boosted our project to receive a 195/200 score
 
+Tech stack: SQL, MySQL, Python, Pandas, NumPy, Seaborn
 
 
 

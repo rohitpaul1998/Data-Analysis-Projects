@@ -9,7 +9,7 @@ ________________________________________________________________________________
 3. Leveraged a Hive database to store the cleansed data to conduct in-depth data analysis through querying and filtering the data, revealing key insights could potentially aid in criminal investigation and prevention
 4. Automated the entire data processing pipeline using a Spark-submit job, saving approximately 2 hours of manual work and improving overall efficiency
 5. Designed and implemented an end-to-end data pipeline in AWS using S3 for creating data lakes, Athena for data analysis, and Glue ETL jobs for transforming and loading structured data, thereby achieving a reduction in data processing time by 40%
-6. Designed an interactive dashboard on Power BI (in progress) which potentially reveals key insights on criminal activities and reveal safe spots by identifying minimum criminal activites in each area
+6. Designed an interactive dashboard on Power BI which potentially reveals key insights on criminal activities and reveal safe spots by identifying minimum criminal activites in each area
 
 Tech stack: SQL, Python, PySpark, Hadoop, Spark, Hive, Google Cloud, AWS: S3 bucket, Glue, Athena, Power BI
 

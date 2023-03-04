@@ -13,7 +13,6 @@ ________________________________________________________________________________
 
 Tech stack: SQL, Python, PySpark, Hadoop, Spark, Hive, Google Cloud, AWS: S3 bucket, Glue, Athena, Power BI
 
-Dashboard:
 <img width="459" alt="image" src="https://user-images.githubusercontent.com/113409553/222876549-1126fba0-cd12-461c-ba7c-d739581fca55.png">
 <p><br></p>
 

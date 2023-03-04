@@ -32,7 +32,7 @@ Tech stack: SQL, SQL Server, Alteryx, ER/Studio, Power BI
 Dimensional Model:
 
 <img width="582" alt="image" src="https://user-images.githubusercontent.com/113409553/222928900-364e32e7-03f3-4743-abbd-20e470ce6ec3.png">
-
+<p><br></p>
 Data Visualizations:
 
 ![image](https://user-images.githubusercontent.com/113409553/222928966-d74c8c10-b8d4-4db4-a725-057dd23797d1.png)

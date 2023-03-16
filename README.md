@@ -11,20 +11,6 @@
 5. Designed and implemented an end-to-end data pipeline in AWS using S3 for creating data lakes, Athena for data analysis, and Glue ETL jobs for transforming and loading structured data, thereby achieving a reduction in data processing time by 40%
 6. Designed an interactive dashboard on Power BI which potentially reveals key insights on criminal activities and reveal safe spots by identifying minimum criminal activites in each area
 
-Tech stack: SQL, Python, PySpark, Hadoop, Spark, Hive, Google Cloud, AWS: S3 bucket, Glue, Athena, Power BI
-
-Dashboard:
-
-<img width="459" alt="image" src="https://user-images.githubusercontent.com/113409553/222876549-1126fba0-cd12-461c-ba7c-d739581fca55.png">
-<p><br></p>
-Reports:
-
-![image](https://user-images.githubusercontent.com/113409553/222929134-79b2d1a6-839d-4fd1-9af9-00db18c0240b.png)
-![image](https://user-images.githubusercontent.com/113409553/222929159-e274b165-b4d1-43d1-abb2-c94a156b1086.png)
-![image](https://user-images.githubusercontent.com/113409553/222929165-b5eaa725-4d36-4964-a50d-fa62d09c384c.png)
-
-
-
 ____________________________________________________________________________________________________________________________________________________________________
 
 **New York City Food Inspection Analysis**
@@ -36,22 +22,6 @@ ________________________________________________________________________________
 4. Designed efficient data preparation pipelines to extract, transform and load data from staging tables into the integration schema using Alteryx that led to a increase in processing time by 10%
 5. Created BI reports in Power BI to visualize data, incur actionable insights and presented a story that can make effective business decisions
 
-Tech stack: SQL, SQL Server, Alteryx, ER/Studio, Power BI
-
-Dimensional Model:
-
-<img width="582" alt="image" src="https://user-images.githubusercontent.com/113409553/222928900-364e32e7-03f3-4743-abbd-20e470ce6ec3.png">
-<p><br></p>
-Data Visualizations:
-
-![image](https://user-images.githubusercontent.com/113409553/222928966-d74c8c10-b8d4-4db4-a725-057dd23797d1.png)
-![image](https://user-images.githubusercontent.com/113409553/222928972-2c7c76e4-8f41-4b8e-91e7-95848e6b612c.png)
-![image](https://user-images.githubusercontent.com/113409553/222928979-29455486-2a4e-407d-86f3-815764dfc50b.png)
-![image](https://user-images.githubusercontent.com/113409553/222928992-68e4ecee-63ee-44f4-889a-3217660a17c4.png)
-![image](https://user-images.githubusercontent.com/113409553/222929007-fc849a2b-fe25-4a58-b2d8-f88b83af0f1b.png)
-
-
-
 ____________________________________________________________________________________________________________________________________________________________________
 
 **Disease Diagnosis and Medic Recommendation System**
@@ -60,12 +30,6 @@ ________________________________________________________________________________
 1. Led a team of 4 and developed a MySQL database that recommends medical professionals for patients based on location, cost, gender, and education
 2. Gathered structured data from Health websites and Twitter using web-scraping techniques, analyzed and transformed it with Python's Pandas and NumPy libraries achieving 98% data accuracy and data completeness
 3. Loaded normalized database tables with clean data to eliminate data redundancy, created SQL views resulting in 100% database organization and visualized data using Seaborn library in Python that boosted our project to receive a 195/200 score
-
-Tech stack: SQL, MySQL, Python, Pandas, NumPy, Seaborn
-
-<img width="908" alt="image" src="https://user-images.githubusercontent.com/113409553/222876786-3566c2e5-8d45-4603-8fe0-ccaea1ce952e.png">
-<p><br></p>
-
 
 
 

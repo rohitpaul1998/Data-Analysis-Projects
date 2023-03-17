@@ -11,6 +11,8 @@
 5. Designed and implemented an end-to-end data pipeline in AWS using S3 for creating data lakes, Athena for data analysis, and Glue ETL jobs for transforming and loading structured data, thereby achieving a reduction in data processing time by 40%
 6. Designed an interactive dashboard on Power BI which potentially reveals key insights on criminal activities and reveal safe spots by identifying minimum criminal activites in each area
 
+***Note:*** Check "Boston Crime Analysis" folder. Inside the folder, you will have a readme file which will showcase the Visualization Reports and Dashboard.
+
 ____________________________________________________________________________________________________________________________________________________________________
 
 **New York City Food Inspection Analysis**
@@ -22,6 +24,8 @@ ________________________________________________________________________________
 4. Designed efficient data preparation pipelines to extract, transform and load data from staging tables into the integration schema using Alteryx that led to a increase in processing time by 10%
 5. Created BI reports in Power BI to visualize data, incur actionable insights and presented a story that can make effective business decisions
 
+***Note:*** Check "New York City Food Inspection Analysis" folder. Inside the folder, you will have a readme file which will showcase the Visualization Reports and Dashboard.
+
 ____________________________________________________________________________________________________________________________________________________________________
 
 **Disease Diagnosis and Medic Recommendation System**
@@ -31,6 +35,7 @@ ________________________________________________________________________________
 2. Gathered structured data from Health websites and Twitter using web-scraping techniques, analyzed and transformed it with Python's Pandas and NumPy libraries achieving 98% data accuracy and data completeness
 3. Loaded normalized database tables with clean data to eliminate data redundancy, created SQL views resulting in 100% database organization and visualized data using Seaborn library in Python that boosted our project to receive a 195/200 score
 
+***Note:*** Check "Disease Diagnosis" folder. Inside the folder, you will have a readme file which will showcase the the data model designed.
 
 
 
